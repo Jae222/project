@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" >
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav >
+        <ul>
+            <li class="navi" > <a href="index.html"><img src="html.png" alt="html logo" width="50" height="50"></a></li>
+            <li class="navi"> <a href="index.html">Home</a> </li>
+            <li class="navi"><a href="about.html">About</a></li>
+            <li class="navi"><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+   
+    
+    
+    <h2 style="color: black; font-family: 'Courier New', Courier, monospace;"> <b style="font-size: 40px;  ">Font-End Web Development</b> </h2>
+    <div class="description" >
+    <p style="color: white;"> <b >Front-end Web developer MasterClass HTML CSS JavaScript</b> </p>
+    <p style="color: white;">  Learn HTML CSS JavaScript all in one place packed with exercises and source code with examples</p>
+           
+    </div>
+     <table id="intro" >
+        <tr>
+            <th> 
+                <p>
+                    <b >HTML:</b> 
+                     stands for Hyper Text Markup Language, it's the standard markup language for creating Web pages,<span id="dots">...</span><span id="more"> it
+                
+                also describes the structure of a Web page, consists of a series of elements these elements tell the browser how to display the content.
+                The elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+                 <br>
+                 <b>CSS:</b> Cascading Style Sheets, fondly referred to as CSS, 
+                is a simply designed language intended to simplify the process of making web pages presentable. 
+                IT allows you to apply styles to web pages. More importantly, 
+                CSS enables you to do this independent of the HTML that makes up each web page.
+                 It describes how a webpage should look: it prescribes colors, fonts, spacing, and much more. 
+                 In short, you can make your website look however you want. 
+                </span>
+                <br>
+                <button onclick="myFunction()" id="myBtn">  Read more</button>
+                <br>
+            </p>
+            </th>
+            <th>
+                <video  width="400" height="200" controls align="center" >
+
+                    <source src="video.mp4" type="video/mp4">
+                    sorry this video isn't available
+                </video>
+            </th>
+        </tr>
+    </table>
+        
+       
+
+
+
+            
+        
+
+    <P><b>Lecture Time:</b></P>
+    <ul>
+        <li>from 8:00<sub>am</sub> </li>
+        <li>to 11:00 <sub>pm</sub></li>
+    </ul>
+    
+
+    <p> <b>Course Levels:</b></p>
+    <ul>
+        <li>1<sup>st</sup> level: basics of html </li>
+        <li> 2<sup>nd</sup> level: advanced html </li>
+    </ul>
+       
+
+    <h2> <b>Course Goals:</b> </h2>
+    <ul>
+        <li>Understand html and what it is used for </li>
+        <li>Each tag and its job</li>
+        <li>How to add texts videos images..etc.</li>
+    </ul>
+    
+    <h2><b>Course Requiements:</b> </h2>
+    <ul >
+        <li>Safari, Google chrome</li>
+        <li>Text editor</li>
+        <li>Stable Internet Connection</li>
+
+    </ul>
+
+   <table id="outer">
+    <tr>
+        <th>
+            <table id="dateandplace" >
+            <p>  Date and Place table:</p>
+            <tr>
+                <th> <b>DAY</b></th>
+                <th><b>PLACE</b></th>
+               
+            </tr>
+            <tr>
+                <td>Sunday & Monday</td>
+                <td>Class A</td>
+                <th><b> <button>Enroll</button> </b></th>
+
+            </tr>
+            <tr>
+                <td>Tuesday & Wednesday</td>
+                <td>Class B</td>
+                <th><b> <button>Enroll</button> </b></th>
+
+            </tr>
+            <tr>
+                <td >Thursday </td>
+                <td>Online Class </td>
+                <th><b> <button>Enroll</button> </b></th>
+
+            </tr>
+        </table></th>
+        <th>
+             
+    <div class="formm">
+        <h2 >Fill the Form below :</h2>
+        <form action="post">
+            <label for="name">Username:</label>
+            <input type="text" id="name">
+            <p>Gender:
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio"  id="female" name="gender">
+            <label for="female">Female</label>
+            </p>
+    
+            <p>From where did you hear about html?</p>
+    
+            <input type="checkbox" name="friend" id="friend">
+            <label for="friend">Friend</label>
+    
+            <input type="checkbox" name="social-media" id="social-media">
+            <label for="social-media">Social-Media</label>
+    
+            <input type="checkbox" name="books" id="books">
+            <label for="books">Books</label>
+    
+           <p> <button>Submit</button></p>
+            
+    
+    
+    
+        </form>
+        </div>
+        </th>
+    </tr>
+    
+   </table>
+   <p>  For refrences press <a href="https://dev.w3.org/html5/spec-LC/">here</a></p>
+   
+
+    <div class="end">
+        <p>Copyrights 2022  Joud. All Rights Reserved.</p>
+    </div>
+</body>
+<script>
+function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }</script>
+
+</html>
